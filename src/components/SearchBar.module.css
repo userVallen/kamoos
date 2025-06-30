@@ -1,0 +1,59 @@
+.searchBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 50px;
+  padding: 1em;
+  color: white;
+  margin: 2em;
+}
+
+.searchBar input {
+  height: auto;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-family: "Cardo", serif;
+  font-size: 1.5em;
+}
+
+.searchBar input:focus {
+  outline: none;
+}
+
+.separator {
+  width: 1px;
+  height: 2.5em;
+  background-color: white;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+@media (max-width: 1200px) {
+  .searchBar {
+    padding: 0.9em;
+  }
+
+  .searchBar input {
+    font-size: 1.3em;
+  }
+
+  .separator {
+    height: 2.2em;
+  }
+}
+
+@media (max-width: 992px) {
+  .searchBar {
+    padding: 0.8em;
+  }
+
+  .searchBar input {
+    font-size: 1.2em;
+  }
+
+  .separator {
+    height: 2em;
+  }
+}

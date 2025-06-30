@@ -1,0 +1,81 @@
+.defContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1em;
+  color: white;
+  font-family: "Cardo", serif;
+  animation: reveal 1s forwards;
+}
+
+.defWrapper {
+  align-items: center;
+  font-size: 1.2em;
+  margin: 1em;
+}
+
+.wordWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  font-size: 4em;
+  margin: 1em 0.4em;
+  column-gap: 0.25em;
+}
+
+.phoneticWrapper {
+  color: rgb(190, 190, 190);
+}
+
+.entryContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2em;
+}
+
+.posWrapper {
+  color: rgb(203, 202, 202);
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .defWrapper {
+    font-size: 1.1em;
+  }
+
+  .wordWrapper {
+    font-size: 3.5em;
+  }
+}
+
+@media (max-width: 992px) {
+  .defWrapper {
+    font-size: 1em;
+  }
+
+  .wordWrapper {
+    font-size: 3.2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .wordWrapper {
+    font-size: 2.8em;
+  }
+}
+
+@media (max-width: 576px) {
+  .wordWrapper {
+    font-size: 2.5em;
+  }
+}
